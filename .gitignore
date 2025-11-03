@@ -1,0 +1,11 @@
+# Ignore system and editor files
+.DS_Store
+Thumbs.db
+
+# Ignore backup files
+*.bak
+*.tmp
+
+# Ignore node or build folders (if added later)
+node_modules/
+dist/
