@@ -41,6 +41,15 @@
         h3 {
             color: #333;
         }
+        .out {
+            
+      border: 1px solid #000;
+      width: 200px;
+      margin: 10px auto;
+      padding: 8px;
+      text-align: right;
+            
+        }
     </style>
 </head>
 <body>
@@ -64,11 +73,22 @@
     <button type="button" id="div" class="div" onclick="calc(' / ');">/</button>
     <button type="button" id="calc" class="calc" onclick="calc(' = ');">=</button>
     <br>
+    <div class="out">
     <div id="n1"></div>
     <div id="op"></div>
     <div id="n2"></div>
     <div id="r"></div>
+    </div>
     </body>
+    <script>
+    let n1=0;
+    let n2=0;
+    let op;
+    let res=0;
+    document.getElementById('n1').innerHTML=n1;
+    function calc(a){
 
+    }
+    </script>
 </body>
 </html>
