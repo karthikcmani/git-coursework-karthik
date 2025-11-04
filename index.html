@@ -6,15 +6,64 @@
     <title>Simple Caculator</title>
     <style>
         body {
-            font-family: cursive;
-            text-align: center;
-            margin-top: 50px;
+            background: #1e1e2f;
+            color: #f1f1f1;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #00e6ac;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #bdbdbd;
+        }
+        button {
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            background-color: #3b82f6;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        h3 {
+            color: #333;
         }
     </style>
 </head>
 <body>
     <h3>Welcome to the Caculator!</h3>
     <p>This simple calculator helps you perform basic math operations like addition, subtraction, multiplication, and division — all right here in your browser.</p>
+    <div>
+    <button type="button" id="1" class="1" onclick="calc('1');">1</button>
+    <button type="button" id="2" class="2" onclick="calc('2');">2</button>
+    <button type="button" id="3" class="3" onclick="calc('3');">3</button><br>
+    <button type="button" id="4" class="4" onclick="calc('4');">4</button>
+    <button type="button" id="5" class="5" onclick="calc('5');">5</button>
+    <button type="button" id="6" class="6" onclick="calc('6');">6</button><br>
+    <button type="button" id="7" class="7" onclick="calc('7');">7</button>
+    <button type="button" id="8" class="8" onclick="calc('8');">8</button>
+    <button type="button" id="9" class="9" onclick="calc('9');">9</button><br>
+    <button type="button" id="0" class="0" onclick="calc('0');">0</button>
+    </div><div style="left: 60;">
+    <button type="button" id="add" class="add" onclick="calc(' + ');">+</button>
+    <button type="button" id="sub" class="sub" onclick="calc(' - ');">-</button>
+    <button type="button" id="mul" class="mul" onclick="calc(' x ');">x</button>
+    <button type="button" id="div" class="div" onclick="calc(' / ');">/</button>
+    <button type="button" id="calc" class="calc" onclick="calc(' = ');">=</button>
+    </body>
 
 </body>
 </html>
