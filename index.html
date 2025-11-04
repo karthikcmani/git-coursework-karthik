@@ -6,15 +6,56 @@
     <title>Simple Caculator</title>
     <style>
         body {
-            font-family: cursive;
-            text-align: center;
-            margin-top: 50px;
+            background: #1e1e2f;
+            color: #f1f1f1;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #00e6ac;
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.1rem;
+            color: #bdbdbd;
+        }
+        button {
+            width: 60px;
+            height: 40px;
+            margin: 5px;
+            font-size: 18px;
+            border-radius: 8px;
+            border: none;
+            background-color: #3b82f6;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        h3 {
+            color: #333;
+        }
+        .out {
+            
+      border: 1px solid #000;
+      width: 200px;
+      margin: 10px auto;
+      padding: 8px;
+      text-align: right;
+            
         }
     </style>
 </head>
 <body>
     <h3>Welcome to the Caculator!</h3>
     <p>This simple calculator helps you perform basic math operations like addition, subtraction, multiplication, and division — all right here in your browser.</p>
+    <div>
     <button type="button" id="1" class="1" onclick="calc('1');">1</button>
     <button type="button" id="2" class="2" onclick="calc('2');">2</button>
     <button type="button" id="3" class="3" onclick="calc('3');">3</button><br>
@@ -31,5 +72,21 @@
     <button type="button" id="mul" class="mul" onclick="calc(' x ');">x</button>
     <button type="button" id="div" class="div" onclick="calc(' / ');">/</button>
     <button type="button" id="calc" class="calc" onclick="calc(' = ');">=</button>
+    <br>
+    <div class="out">
+    <div id="n1"></div>
+    <div id="op"></div>
+    <div id="n2"></div>
+    <div id="r"></div>
+    </div>
+    <script>
+    let n1=0;
+    let n2=0;
+    let op;
+    let res=0;
+    document.getElementById('n1').innerHTML=n1;
+    function calc(a){
+    }
+    </script>
 </body>
 </html>
