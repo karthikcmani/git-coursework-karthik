@@ -1,0 +1,72 @@
+[33mcommit 8a367eafb57eb36745c4383d00ad1c8d7e762fde[m[33m ([m[1;36mHEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 2cdfbc4 50257bf
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Tue Nov 4 16:48:06 2025 +0530
+
+    merge: combine UI enhancements from feature-ui branch
+
+[33mcommit 50257bf2e379b4c7eb2736397b05af7a4912ae6a[m[33m ([m[1;32mfeature-ui[m[33m)[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Tue Nov 4 07:57:06 2025 +0530
+
+    feat: add style for div tags and add skelton for js script
+
+[33mcommit b0c8f2a52dc0e6f726c587365067a033dea9e37d[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Tue Nov 4 07:41:53 2025 +0530
+
+    feat: add div tags in html for retrive/display input and result data from js function
+
+[33mcommit f61ac21728b6bea14b60e45ea51e4e98974ab4ea[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Tue Nov 4 07:37:57 2025 +0530
+
+    feat: add minimal styling for heading,description and buttons
+
+[33mcommit 2cdfbc4a8f2245d32530101f2cf6367b22b1d5fd[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Tue Nov 4 01:10:00 2025 +0530
+
+    feat: add calculator number buttons
+
+[33mcommit 37a3e7d020f0351afe71f292ef96a683a8523e93[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Tue Nov 4 01:09:23 2025 +0530
+
+    feat: add basic HTML structure for calculator
+
+[33mcommit f2c658cc55176a0ffb95fe8c065c41f475182b5c[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Mon Nov 3 23:53:11 2025 +0530
+
+    feat: added description paragraph
+
+[33mcommit eca34b9e1003f16d1b65c58cb4c8960e16d2f69d[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Mon Nov 3 23:50:11 2025 +0530
+
+    feat: welcome heading note added in the index file
+
+[33mcommit 52d9a9d721833afdfa05ba391c98599e94184b1f[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Mon Nov 3 22:00:47 2025 +0530
+
+    chore add gitignore file
+
+[33mcommit 29701cc413cea98c98b912e8d5265fa1f95c5c18[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Mon Nov 3 08:21:39 2025 +0530
+
+    docs: add README and LICENSE
+
+[33mcommit 24eeb0f7a3c98b5d2008fbb98bb9cd27acd0d14c[m
+Author: Karthik <25mp2576@rit.ac.in>
+Date:   Mon Nov 3 08:17:37 2025 +0530
+
+    docs: add README and LICENSE
+
+[33mcommit ff7cc72d162ec18054a1ac330a8040c8fe96c989[m
+Author: aflu <aflalmathew1991@gmail.com>
+Date:   Mon Nov 3 07:59:29 2025 +0530
+
+    initial commit
