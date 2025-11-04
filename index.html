@@ -42,14 +42,14 @@
             color: #333;
         }
         .out {
-            
-      border: 1px solid #000;
-      width: 200px;
-      margin: 10px auto;
-      padding: 8px;
-      text-align: right;
+            border: 1px solid #000;
+            width: 200px;
+            margin: 10px auto;
+            padding: 8px;
+                text-align: right;
             
         }
+        
     </style>
 </head>
 <body>
@@ -79,6 +79,7 @@
     <div id="n2"></div>
     <div id="r"></div>
     </div>
+    </body>
     <script>
     let n1=0;
     let n2=0;
@@ -86,7 +87,57 @@
     let res=0;
     document.getElementById('n1').innerHTML=n1;
     function calc(a){
+        console.log("enterd to calc fn()");
+        if(op==null && !((a==' + ')||(a==' - ')||(a==' x ')||(a==' / '))){
+            a = parseInt(a);
+            if((a>=0&&a<=9)&& ((a!=' + ')&&(a!=' - ')&&(a!=' x ')&&(a!=' / ')&&(a!=' = '))){
+            n1*=10;
+            n1+=a;
+            document.getElementById('n1').innerHTML=n1;
+            }
+        }
+        else if((a==' + ')||(a==' - ')||(a==' x ')||(a==' / ')){
+        op=a;
+        document.getElementById('n1').innerHTML="";
+        document.getElementById('op').innerHTML=n1+op;
+        }
+        else if(op && a!=' = '){
+                        a = parseInt(a);
 
+        if(((a>=0&&a<=9))&& ((a!=' + ')&&(a!=' - ')&&(a!=' x ')&&(a!=' / ')&&(a!=' = '))){
+         a=  parseInt(a);
+         console.log("entered");
+          n2*=10;
+          n2+=a;
+          document.getElementById('op').innerHTML="";
+          document.getElementById('n2').innerHTML=n1+op+n2;
+        }
+        }
+        else if(a==' = '){
+            console.log("keri");
+            switch(op){
+                case ' + ':
+                    res=n1+n2;
+                    break;
+                case ' - ':
+                    res=n1-n2;
+                    break;
+                case ' x ':
+                    res=n1*n2;
+                    break;
+                case ' / ':
+                    res=n1/n2;
+                    break;
+            
+            }
+                    console.log(n1,op,n2,res);
+                    document.getElementById('n2').innerHTML="";
+                    document.getElementById('r').innerHTML=n1+op+n2+" = "+res;
+                    op=null;
+                    n1=n2=res=0;
+                    console.log(n1,op,n2,res);
+
+        }
     }
     </script>
 </body>
